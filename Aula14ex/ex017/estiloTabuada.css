@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(7, 0, 71);
+    font: 15pt normal sans-serif;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+
+section{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 16px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(10, 10, 10, 0.658);
+    
+}
+
+#deletar{
+    border: 1px solid rgb(113, 37, 235);
+    border-radius: 3px;
+    background-color: white;
+
+}
+
+#gerar{
+    border: 1px solid rgb(113, 37, 235);
+    border-radius: 3px;
+    background-color: white;
+
+}
+
+#deletar:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+#gerar:hover{
+    background-color: rgb(194, 194, 194);
+
+}
+
+
+
+#res{
+    display: inline;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

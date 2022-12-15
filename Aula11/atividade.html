@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro ou BR?</title>
+    <style>
+        body {
+            background-color: rgb(69, 150, 150);
+            font: 15pt normal Arial;
+            color: white;
+            text-align: center;
+            padding: 55px;
+        }
+
+        input#txtpais {
+            border: none;
+            padding: 5px;
+        }
+
+        input#btn {
+            border: none;
+            padding: 5px;
+            margin-left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Onde você nasceu? In which country were you born?</h1>
+
+    Digite o país que você nasceu: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verifica" onclick="verifica()" id="btn">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function verifica() {
+            var res = document.getElementById("res");
+            var txtpais = document.getElementById("txtpais");
+            var vel = String(txtpais.value);
+
+            if (vel == 'Brasil' || vel == 'brasil') {
+                res.innerHTML = `<p>Vive no ${vel}</p>`;
+                res.innerHTML += '<p>Você é brasileiro</p>'
+            } else {
+                res.innerHTML = `<p>You live in ${vel}</p>`;
+                res.innerHTML += "<p>You were born outside Brazil, are you a foreigner. Welcome</p>";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
